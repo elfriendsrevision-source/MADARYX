@@ -28,6 +28,9 @@ jobs:
       - name: Create Android project files
         run: flutter create . --project-name madaryx --platforms=android
 
+      - name: Restore MADARYX source files
+        run: unzip -o MADARYX_flutter_project.zip -d .
+
       - name: Get dependencies
         run: flutter pub get
 
